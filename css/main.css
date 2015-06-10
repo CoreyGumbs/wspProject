@@ -17,7 +17,7 @@ WSP COMPONENT LIBRARY STYLESHEET
 
 body {
 	background-color: #272F32;
-	background-image: url();
+	
 }
 
 section {
@@ -111,3 +111,22 @@ article p {
 	color: #FF8C00;
 	
 }
+
+button {
+	width: 100px;
+	height: 40px;
+	margin: 10px 0;
+	color: #fff;
+	background-color: #FF8C00;
+	border: 0px;
+	border-radius: 5px;
+	
+}
+
+button:hover {
+	background-color: #272F32;
+	color: #ccc;
+	border: 0px solid;
+}
+
+button:focus {outline:0 !important;}
