@@ -113,20 +113,21 @@ article p {
 }
 
 button {
-	width: 100px;
+	width: 150px;
 	height: 40px;
 	margin: 10px 0;
 	color: #fff;
 	background-color: #FF8C00;
 	border: 0px;
 	border-radius: 5px;
+	float: right;
 	
 }
 
 button:hover {
 	background-color: #272F32;
 	color: #ccc;
-	border: 0px solid;
+	border: 2px solid #bbb;
 }
 
 button:focus {outline:0 !important;}
