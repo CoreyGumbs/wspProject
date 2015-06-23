@@ -2,7 +2,73 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
-
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /* HEADER ======================================== */
 
+article {
+	max-width: 960px;
+	margin: 0 auto;
+	border: 1px solid green;
+	font-family: 'Varela Round', sans-serif;
+}
+
+section{
+	width: calc(100%/2);
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#leftCTA{
+	float: left;
+	border-right: 1px solid #ccc;
+}
+
+section:nth-child(3){
+	float:right;
+	color: green;
+	font-size: 16px;
+}
+
+
+h1 {
+	margin: 20px 0;
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 26px;
+	text-align: center;
+	color: green;
+}
+
+h3 {
+	font-size: 16px;
+	text-align: center;
+	color: orange;
+}
+
+ul{
+		list-style-type: disc;
+		padding: 20px;
+}
+
+ul >li {
+	margin: 20px 30px;
+}
+
+button {
+	
+	width: 200px;
+	margin: 50px auto;
+	padding: 10px;
+	border-radius: 50px;
+	background-color: #000;
+	color: #fff;
+
+}
+
+button:focus {
+	outline: 0;
+}
 /* HEADER ======================================== */
