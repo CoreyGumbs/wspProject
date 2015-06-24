@@ -2,7 +2,117 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+body {
+	background-image: url(Sunset.jpg);
+}
+
+a {
+
+	text-decoration: none;
+	color: #fff;
+}
+
+ul > li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+label {
+	visibility: hidden;
+}
 
 /* HEADER ======================================== */
+header li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}
 
-/* HEADER ======================================== */
+header ul:nth-of-type(1){
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	border: 1px solid green;
+}
+
+header ul:nth-of-type(2){
+	position: absolute;
+	top: 2px;
+	right: 20px;
+	border: 1px solid green;
+}
+
+header li:nth-of-type(1) a { 
+	background: url(tumblrlogo.png);
+	background-size: 40px 40px;
+  background-repeat: no-repeat;
+}
+
+header form p{
+	display: inline;
+	margin: 0 10px;
+	border: 1px solid red;
+}
+
+header form input[type="submit"]::before {
+	content: url(magglass.png);
+}
+
+/* Sign Up Form ======================================== */
+
+section {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 100%;
+	
+}
+
+article {
+	width: calc(100%/4);
+	margin: 130px auto;	
+	border: 1px solid yellow;
+	text-align: center;
+	background-image: url(tumblrtext.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+article ul:nth-child(4) {
+	padding: 0;
+	text-align: center;
+}
+article ul:nth-child(4) li {
+	margin: 30px 5px;
+	padding: 0;
+}
+
+article img {
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+article form {
+	margin-top: 100px;
+}
+
+section ul:nth-child(2) {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	width: calc(100%/2);
+	margin-top: 100px;
+	padding: 0;
+}
+
+section ul:nth-child(2) li {
+	margin-right: 20px;
+}
+
+section p:nth-child(3){
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
