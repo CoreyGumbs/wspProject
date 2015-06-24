@@ -3,6 +3,7 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 body {
+	font-family: Arial, Verdana, sans-serif;
 	background-image: url(Sunset.jpg);
 }
 
@@ -52,12 +53,10 @@ header li:nth-of-type(1) a {
 header form p{
 	display: inline;
 	margin: 0 10px;
+	padding: 0;
 	border: 1px solid red;
 }
 
-header form input[type="submit"]::before {
-	content: url(magglass.png);
-}
 
 /* Sign Up Form ======================================== */
 
@@ -66,48 +65,69 @@ section {
 	top: 70px;
 	left: 0;
 	width: 100%;
-	
 }
 
 article {
 	width: calc(100%/4);
 	margin: 130px auto;	
-	border: 1px solid yellow;
 	text-align: center;
 	background-image: url(tumblrtext.png);
-	background-size: contain;
+	background-size: 70%;
 	background-repeat: no-repeat;
-}
-
-article ul:nth-child(4) {
-	padding: 0;
-	text-align: center;
-}
-article ul:nth-child(4) li {
-	margin: 30px 5px;
-	padding: 0;
-}
-
-article img {
-	width: 100px;
-	height: 30px;
-	border-radius: 5px;
+	background-position: center top;
+	overflow: hidden;
 }
 
 article form {
-	margin-top: 100px;
+	margin-top: 70px;
+	padding: 0;
+	font-size: 0px;
 }
 
-section ul:nth-child(2) {
+article form input {
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	font-size: 18px;
+	border: 0px;
+	outline: none;
+}
+
+article form input[type="email"]{
+	border-radius: 2px 2px 0 0;
+	border-bottom-width: 1px;
+	border-bottom-color: #bbb;
+	border-bottom-style: solid;
+}
+
+article input[type="submit"]:nth-child(3){
+	width: 100%;
+	padding: 10px;
+	margin-top: 30px;
+	background-color: #0d99ea;
+	font-size: 18px;
+	border-radius: 2px;
+	color: white;
+}
+
+article img {
+	margin: 100px 50px;
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+section ul:nth-child(1) {
 	position: absolute;
 	bottom: 0;
 	left: 20px;
 	width: calc(100%/2);
 	margin-top: 100px;
 	padding: 0;
+	border: 1px solid yellow;
 }
 
-section ul:nth-child(2) li {
+section ul:nth-child(1) li {
 	margin-right: 20px;
 }
 
