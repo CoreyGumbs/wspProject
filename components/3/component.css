@@ -8,67 +8,83 @@ COMPONENT STYLESHEET
 article {
 	max-width: 960px;
 	margin: 0 auto;
-	border: 1px solid green;
+	border: 0px solid green;
 	font-family: 'Varela Round', sans-serif;
 }
 
 section{
-	width: calc(100%/2);
+	width: calc(100%/3);
 	margin-top: 10px;
-	padding: 10px;
+	padding: 0px;
 }
 
-#leftCTA{
-	float: left;
-	border-right: 1px solid #ccc;
+section:nth-child(2){
+	position: absolute;
+	top: 90px;
+	left: 240px;
 }
 
 section:nth-child(3){
-	float:right;
-	color: green;
+	position:absolute;
+	top: 90px;
+	right: 260px	;
+	color: #38bb5d;
 	font-size: 16px;
 }
-
 
 h1 {
 	margin: 20px 0;
 	font-size: 40px;
 	text-align: center;
 }
+span {
+	font-weight: bold;
+}
 
 h2 {
 	font-size: 26px;
 	text-align: center;
-	color: green;
 }
 
 h3 {
+	margin-top: 10px;
 	font-size: 16px;
 	text-align: center;
-	color: orange;
+	color: #f06e00;
 }
 
 ul{
-		list-style-type: disc;
-		padding: 20px;
+	margin: 20px 50px;
+	list-style-type: disc;
+	padding: 20px;
 }
 
 ul >li {
 	margin: 20px 30px;
 }
 
-button {
-	
-	width: 200px;
-	margin: 50px auto;
+section ul:nth-child(2){
+	margin-top: 48px;
+}
+
+input[type="submit"] {
+	width: 250px;
+	margin: 10px 100px;
 	padding: 10px;
-	border-radius: 50px;
-	background-color: #000;
+	border: none;
+	border-radius: 60px;
+	text-transform: uppercase;
 	color: #fff;
-
+	outline: none;
 }
 
-button:focus {
-	outline: 0;
+#buttonOne{
+	margin-top: 117px;
+	background-color: #000;
 }
+
+#buttonTwo{
+	background-color: #38bb5d;
+}
+
 /* HEADER ======================================== */
