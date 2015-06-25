@@ -3,7 +3,7 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 body{
-	font-family: "Lato",Helvetica,Arial,sans-serif;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 	background-color: #eee;
 }
 
@@ -66,6 +66,9 @@ article li {
 
 #languagePick li:nth-child(1){
 	font-weight: 800;
+}
+#languagePick li:nth-child(2){
+	font-weight: 300;
 }
 
 nav{
