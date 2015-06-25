@@ -8,8 +8,8 @@ body {
 }
 
 a {
-
 	text-decoration: none;
+	font-weight: 600;
 	color: #fff;
 }
 
@@ -19,44 +19,78 @@ ul > li {
 }
 
 label {
+	padding: 0;
 	visibility: hidden;
 }
 
 /* HEADER ======================================== */
-header li a {
-	display: block;
-	width: 40px;
-	height: 40px;
-	text-indent: -9999px;
-}
+
 
 header ul:nth-of-type(1){
 	position: absolute;
 	top: 2px;
 	left: 10px;
-	border: 1px solid green;
+	padding: 0;	
 }
 
 header ul:nth-of-type(2){
 	position: absolute;
 	top: 2px;
 	right: 20px;
-	border: 1px solid green;
+	padding: 0;
+}
+
+header button {
+	padding: 15px 25px;
+	border-radius: 5px;
+	border: 0;
+	margin-right: 20px;
 }
 
 header li:nth-of-type(1) a { 
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 20px;
+	text-indent: -9999px;
 	background: url(tumblrlogo.png);
+	background-position: 0px -12px;
 	background-size: 40px 40px;
   background-repeat: no-repeat;
+  outline: 0;
 }
 
 header form p{
 	display: inline;
-	margin: 0 10px;
+	margin: 0;
 	padding: 0;
-	border: 1px solid red;
 }
 
+header form p::before {
+	position: relative;
+	top: 2px;
+	content: url(magglass.png);
+	padding: 1px;
+
+}
+
+header input[type="text"]{
+	top: 10px;
+	width: 200px;
+	padding: 5px;
+	font-size: 18px;
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	outline: 0;
+}
+
+header input[type="text"]::-webkit-input-placeholder {
+	padding: 0 20px;
+  color: #fff;
+  opacity: .5;
+
+}
 
 /* Sign Up Form ======================================== */
 
@@ -65,11 +99,38 @@ section {
 	top: 70px;
 	left: 0;
 	width: 100%;
+	color: #fff;
+}
+
+section ul:nth-child(2) {
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	width: calc(100%/2);
+
+	padding: 0;
+}
+
+section ul:nth-child(2) li {
+	margin-right: 20px;
+}
+
+section p:nth-child(3){
+	display:inline;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
+
+section a img {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
 }
 
 article {
 	width: calc(100%/4);
-	margin: 130px auto;	
+	margin: 100px auto;	
 	text-align: center;
 	background-image: url(tumblrtext.png);
 	background-size: 70%;
@@ -85,54 +146,41 @@ article form {
 }
 
 article form input {
-	width: 100%;
+	width: 80%;
 	margin: 0;
-	padding: 20px;
+	padding: 15px;
 	font-size: 18px;
 	border: 0px;
 	outline: none;
 }
 
 article form input[type="email"]{
-	border-radius: 2px 2px 0 0;
+	border-radius: 5px 5px 0 0;
 	border-bottom-width: 1px;
 	border-bottom-color: #bbb;
 	border-bottom-style: solid;
 }
 
 article input[type="submit"]:nth-child(3){
-	width: 100%;
-	padding: 10px;
+	width: 90%;
+	padding: 15px;
 	margin-top: 30px;
 	background-color: #0d99ea;
 	font-size: 18px;
-	border-radius: 2px;
-	color: white;
+	border-radius: 5px;
+	color: #fff;
 }
 
-article img {
-	margin: 100px 50px;
+article ul{
+	margin-top: 130px;
+	padding: 0;
+	text-align: center;
+}
+
+article img:nth-child(1) {
 	width: 150px;
 	height: 40px;
 	border-radius: 5px;
 }
 
-section ul:nth-child(1) {
-	position: absolute;
-	bottom: 0;
-	left: 20px;
-	width: calc(100%/2);
-	margin-top: 100px;
-	padding: 0;
-	border: 1px solid yellow;
-}
 
-section ul:nth-child(1) li {
-	margin-right: 20px;
-}
-
-section p:nth-child(3){
-	position: absolute;
-	bottom: 0;
-	right: 20px;
-}
