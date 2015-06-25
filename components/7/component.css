@@ -9,6 +9,7 @@ body{
 
 h1 {
 	text-transform: uppercase;
+	font-size: 18px;
 }
 
 ul {
@@ -20,12 +21,16 @@ a{
 	text-decoration: none;
 	color: #333;
 }
+
+a:hover {
+	color: #2a8a15;
+}
 /* HEADER ======================================== */
 article{
-	width: calc(100%/6);
-	margin: 150px 0;
+	width: 200px;
+	margin: 100px 10px;
 	padding: 10px;
-	border: 1px solid green;
+
 }
  article:nth-of-type(1){
  	margin-left: 30px;
@@ -46,11 +51,12 @@ article:nth-of-type(5){
 
 article li {
 	margin: 20px 0;
+	font-weight: 300;
 }
 
 #languagePick{
 	position: absolute;
-	bottom: 70px;
+	bottom: 150px;
 	left: 30px;
 }
 
@@ -58,16 +64,24 @@ article li {
 	display: inline-block;
 }
 
+#languagePick li:nth-child(1){
+	font-weight: 800;
+}
 
 nav{
 	position: absolute;
-	bottom: 10px;
+	bottom: 80px;
 	left: 30px;
 }
 
 nav li{
 	display: inline-block;
-	margin-right: 10px;
+	font-weight: 300;
+}
+
+nav li::after {
+	margin: 0 5px;
+	content: "  | ";
 }
 
 	
