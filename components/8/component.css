@@ -21,6 +21,10 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
+
+a:hover{
+	color: #555;
+}
  
 label {
 	width: 10px;
