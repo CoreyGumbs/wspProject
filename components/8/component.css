@@ -5,7 +5,7 @@ COMPONENT STYLESHEET
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
-	background-color: #eee;
+	background-color: #ddd;
 
 }
 
@@ -99,7 +99,17 @@ nav ul:nth-of-type(2) input[type="text"]{
 section {
 	position: absolute;
 	top: 50px;
-	width: 960px;
-	margin: 0  auto;
-	border: 1px solid red;
+	margin: 0  200px;
+}
+
+section div{
+	padding: 0;
+}
+
+div:nth-child(2) li{
+	margin-right: 11px;
+}
+
+div:nth-child(3) li{
+	margin-right: 15px;
 }
