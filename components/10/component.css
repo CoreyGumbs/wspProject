@@ -22,9 +22,19 @@ ul{
 }
 
 li {
-	margin: 10px 20px;
+	margin: 10px 10px;
+	padding: 5px;
+	font-size: 14px;
 	list-style-type: none;
 }
+
+li::before {
+	content: url(arrow.png);
+	margin-right: 5px;
+	vertical-align: -20%;
+
+}
+
 section p {
 	position: relative;
 	top: -80px;
@@ -43,15 +53,20 @@ section p span:nth-of-type(1){
 	line-height: 1em;
 }
 
+input[type="image"]{
+	margin-right: 20px;
+	float: right;
+	outline: 0;
+}
 
-
-/* HEADER ======================================== */
+/* Layout ======================================== */
 
 section:nth-child(1){
 	width: 100%;
-	height: 400px;
+	height: 450px;
 	margin-top: 150px;
 	background-color: #073360;
+	border-radius: 5px;
 	color: #fff;
 }
 
