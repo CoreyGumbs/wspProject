@@ -3,7 +3,7 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+/* Global ======================================== */
 body {
 	
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -115,9 +115,6 @@ input[type="text"]{
 	float: left;
 	outline: 0;
 }
-
-
-
 
 /* Footer ========================================*/
 
