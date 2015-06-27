@@ -89,7 +89,6 @@ header input[type="text"]::-webkit-input-placeholder {
 	padding: 0 20px;
   color: #fff;
   opacity: .5;
-
 }
 
 /* Sign Up Form ======================================== */
@@ -107,7 +106,6 @@ section ul:nth-child(2) {
 	bottom: 0;
 	left: 20px;
 	width: calc(100%/2);
-
 	padding: 0;
 }
 
